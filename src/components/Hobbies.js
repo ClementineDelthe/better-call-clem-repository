@@ -45,7 +45,7 @@ const Hobbies = () => {
   const intervalRef = useRef(null);
 
   const hobbies = [
-    ['culture', 'I love reading, listening, watching, learning. I spend hours listenning to podcasts or reading books. I also have a weakness for spanish music that I won\'t even try to fight. I am open to recomandations so don\'t hesitate to reach out if you just digged the podcast nugget ! 💎', 'blue', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
+    ['culture', 'I love reading, listening, watching, learning. I spend hours listenning to podcasts or reading books. I also have a weakness for spanish music that I won\'t even try to fight. I am open to recomandations so don\'t hesitate to reach out if you just digged the podcast nugget ! 💎', '[#D5E6FB]', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
     ['sport', 'I love to get that energy out and go further. I tried many sports, team or individual, and I love both. I enjoy team spirit and chearing each other up, but I also love a solo run with a good playlist. Bonus points for any outdoor sport, nothing beats nature\'s healing 🌿', 'pink', [bike, fitness, hike, pilates, run, ski, surf, volley, yoga]],
     ['creation', 'I love trying new things and making them myself. I spot something that I like and think about how to make it my own way, I also love home made presents and meals, nothing says I care better than that ! I tuft beach carpet so everyone can wake up with their feet in the water 🌊', 'lilac', [boutures, angle, bougie, tarte, sables, pot, peinture, colle, plage]],
   ];

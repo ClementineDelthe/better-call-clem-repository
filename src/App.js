@@ -19,41 +19,30 @@ function App() {
   return (
     <div className="custom-cursor">
       <Header />
-      {/* <Element name="about"> */}
-        <About />
-      {/* </Element> */}
-      {/* <Wave /> */}
+      <About />
       <SecondWave />
-      {/* <Element name="skills"> */}
-        <Skills />
-      {/* </Element> */}
+      <Skills />
       <WaveA
         color={"#C5C3E3"}
       />
       <WaveB
         color={"lilac"}
       />
-      {/* <Element name="projects"> */}
-        <Projects />
-      {/* </Element> */}
+      <Projects />
       <WaveA
         color={"#D5E6FB"}
       />
       <WaveB
-        color={"blue"}
+        color={"[#D5E6FB]"}
       />
-      {/* <Element name="hobbies"> */}
-        <Hobbies />
-      {/* </Element> */}
+      <Hobbies />
       <WaveA
         color={"#F5B8CC"}
       />
       <WaveB
         color={"pink"}
       />
-      {/* <Element name="contact"> */}
-        <Contact />
-      {/* </Element> */}
+      <Contact />
       <Footer />
     </div>
   );
