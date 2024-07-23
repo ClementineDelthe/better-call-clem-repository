@@ -82,9 +82,9 @@ const Hobbies = () => {
           HOBBIES
         </h2>
         <div className="mt-4 flex flex-col lg:flex-row justify-between items-center gap-2">
-          <div className={`grid grid-cols-3 gap-3 md:gap-10 rounded-3xl p-10 bg-blue bg-${currentHobby[2]}`}>
+          <div className={`grid grid-cols-3 gap-3 md:gap-10 rounded-3xl p-10 shadow-inner bg-${currentHobby[2]}`}>
             {currentHobby[3].map((hob, index) => (
-              <img key={index} src={hob} alt="" className='w-24 h-24 md:w-36 md:h-36 object-cover bg-beige rounded-3xl' />
+              <img key={index} src={hob} alt="" className='w-24 h-24 md:w-36 md:h-36 object-cover bg-beige rounded-3xl shadow-sm' />
             ))}
           </div>
 
@@ -99,7 +99,7 @@ const Hobbies = () => {
           </div>
 
           <div className='lg:w-1/3 lg:pl-2 md:px-10'>
-            <h3 className={`rubik-mono-one-regular text-xl text-blue text-${currentHobby[2]}`}>{currentHobby[0]}</h3>
+            <h3 className={`rubik-mono-one-regular text-xl text-${currentHobby[2]}`}>{currentHobby[0]}</h3>
             <p className='archivo-black-regular'>{currentHobby[1]}</p>
           </div>
         </div>
