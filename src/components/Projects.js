@@ -30,7 +30,7 @@ import { Button } from 'react-scroll';
 const myProjects = [
   {
     title: 'Airnbnb',
-    description: 'The best app to book noisy artists',
+    description: 'The best app to book forgotten artists',
     picture1: rnbnbHome,
     picture2: rnbnbAll,
     picture3: rnbnbArtist,
@@ -40,7 +40,7 @@ const myProjects = [
   },
   {
     title: 'Chichat',
-    description: 'The simplest way to contact you nanny',
+    description: 'The simplest way to contact your nanny',
     picture1: feedChitchat,
     picture2: messageChitchat,
     picture3: mobileChitchat,
@@ -50,7 +50,7 @@ const myProjects = [
   },
   {
     title: 'Featured projects',
-    description: 'Several companies events websites',
+    description: 'Several company event websites',
     picture1: lacosteOlympiades,
     picture2: voeuxRTE,
     picture3: '',
@@ -60,7 +60,7 @@ const myProjects = [
   },
   {
     title: 'WHAT THE DEF',
-    description: 'A family Glossary for words lovers only',
+    description: 'A Glossary for words lovers',
     picture1: allWTD,
     picture2: comWTD,
     picture3: defWTD,
@@ -90,7 +90,7 @@ const myProjects = [
   },
   {
     title: 'Better Call Clem',
-    description: 'This very own portfolio',
+    description: 'My very own portfolio',
     picture1: homeBCC,
     picture2: skillsBCC,
     picture3: projectsBCC,

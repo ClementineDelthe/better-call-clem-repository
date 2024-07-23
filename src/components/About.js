@@ -15,13 +15,13 @@ const About = () => {
         <div className='p-2 text-xs md:text-base'>
           <p className='archivo-black-regular text-beige'>Hi, I'm Clémentine 🍊, a passionate web developer.</p> <br />
           <p className='archivo-black-regular text-justify text-beige'>
-            After several years of dedicated experience in CRM management, where my focus was on understanding customer needs and crafting personalised offers, I decided to shift my career trajectory towards web development. I enrolled in Le Wagon's Bootcamp, a unique experience that taught me the skills needed to embark on a new journey.
+            After several years of experience in CRM management, with an emphasis on understanding customer needs and crafting personalised offers, I decided to shift my career trajectory towards web development. I enrolled in Le Wagon's Bootcamp, a unique experience that taught me the requested skills to embark on this new journey.
             <br />
-            I began my new career as a Full-Stack Developer working for an event company, managing multiple projects for various clients. This opportunity not only allowed me to put my skills into practice in different programming languages but also provided an invaluable learning experience, enhancing my capabilities even further.
+            I started my new career as a Full-Stack Developer working for an event company, managing multiple projects for various clients. This opportunity not only allowed me to put my skills into practice in different programming languages but also provided a valuable learning experience, reinforcing my capabilities even further.
             <br />
-            Following this, I joined Visence, a company focused on simplifying customer support interactions. As a full-stack developer at Visence, I implemented several features, fixed bugs, and independently managed the HubSpot integration, including development and documentation.
+            Following this, I joined Visence, a company focused on simplifying customer support interactions, as a full-stack developer. During my time there, I implemented several features, fixed bugs, and independently managed the HubSpot integration, including development and documentation.
             <br />
-            I am passionate about contributing my expertise to innovative teams !
+            I am looking forward to contributing to your innovative projects with my expertise and enthusiasm !
           </p>
         </div>
       </div>
