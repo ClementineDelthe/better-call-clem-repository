@@ -30,10 +30,10 @@ function App() {
       />
       <Projects />
       <WaveA
-        color={"#D5E6FB"}
+        color={"#025548"}
       />
       <WaveB
-        color={"sky"}
+        color={"green"}
       />
       <Hobbies />
       <WaveA
