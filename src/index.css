@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,114 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rubik+Mono+One&display=swap');
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-cursor {
+  cursor: url('../public/check.png'), auto;
+}
+
+/* ROTATING TEXT */
+.rotating-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
+
+.rotating-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.rotating-text {
+  font-size: 9px;
+  fill: violet;
+  background-color: white;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-svg {
+  animation: rotate 12s linear infinite;
+}
+
+.header-glass {
+
+
+  background: rgba(255, 255, 255, 0.41);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.3px);
+  -webkit-backdrop-filter: blur(11.3px);
+}
+.header-glass a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* BACKGROUND IMAGES */
+/*
+#projects {
+  background-image: url(../src/assets/form_green_leaf.png);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#landing-page {
+    height: 100vh;
+    background: #fe5815 ; /
+    background: url(../images/background2.jpg);
+    background: #005BBB;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 300px 0px rgba(0, 0, 0, .3);
+    padding-top: 10vh;
+    font-family: 'Work Sans', sans-serif;
+}
+*/
+
+/* HOBBIES SCROLL */
+/* .scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+.hobby-item {
+  display: inline-block;
+  padding: 0 30px;
+  font-size: 24px;
+  white-space: nowrap;
+} */
+
+/* div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+} */
