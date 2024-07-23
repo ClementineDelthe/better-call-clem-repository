@@ -24,7 +24,7 @@ module.exports = {
         'green': '#025548',
         'white': '#FFF',
         'black': '#1C1C1C',
-        'blue': '#D5E6FB',
+        'sky': '#D5E6FB',
         'yellow': '#F6E140',
         // 'orange2': '#EF611F',
       },
