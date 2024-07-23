@@ -33,7 +33,7 @@ function App() {
         color={"#D5E6FB"}
       />
       <WaveB
-        color={"[#D5E6FB]"}
+        color={"blue"}
       />
       <Hobbies />
       <WaveA

@@ -45,7 +45,7 @@ const Hobbies = () => {
   const intervalRef = useRef(null);
 
   const hobbies = [
-    ['culture', 'I love reading, listening, watching, learning. I spend hours listenning to podcasts or reading books. I also have a weakness for spanish music that I won\'t even try to fight. I am open to recomandations so don\'t hesitate to reach out if you just digged the podcast nugget ! 💎', '[#D5E6FB]', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
+    ['culture', 'I love reading, listening, watching, learning. I spend hours listenning to podcasts or reading books. I also have a weakness for spanish music that I won\'t even try to fight. I am open to recomandations so don\'t hesitate to reach out if you just digged the podcast nugget ! 💎', 'blue', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
     ['sport', 'I love to get that energy out and go further. I tried many sports, team or individual, and I love both. I enjoy team spirit and chearing each other up, but I also love a solo run with a good playlist. Bonus points for any outdoor sport, nothing beats nature\'s healing 🌿', 'pink', [bike, fitness, hike, pilates, run, ski, surf, volley, yoga]],
     ['creation', 'I love trying new things and making them myself. I spot something that I like and think about how to make it my own way, I also love home made presents and meals, nothing says I care better than that ! I tuft beach carpet so everyone can wake up with their feet in the water 🌊', 'lilac', [boutures, angle, bougie, tarte, sables, pot, peinture, colle, plage]],
   ];
@@ -82,7 +82,7 @@ const Hobbies = () => {
           HOBBIES
         </h2>
         <div className="mt-4 flex flex-col lg:flex-row justify-between items-center gap-2">
-          <div className={`grid grid-cols-3 gap-3 md:gap-10 rounded-3xl p-10 bg-${currentHobby[2]}`}>
+          <div className={`grid grid-cols-3 gap-3 md:gap-10 rounded-3xl p-10 bg-blue bg-${currentHobby[2]}`}>
             {currentHobby[3].map((hob, index) => (
               <img key={index} src={hob} alt="" className='w-24 h-24 md:w-36 md:h-36 object-cover bg-beige rounded-3xl' />
             ))}
@@ -99,12 +99,11 @@ const Hobbies = () => {
           </div>
 
           <div className='lg:w-1/3 lg:pl-2 md:px-10'>
-            <h3 className={`rubik-mono-one-regular text-xl text-${currentHobby[2]}`}>{currentHobby[0]}</h3>
+            <h3 className={`rubik-mono-one-regular text-xl text-blue text-${currentHobby[2]}`}>{currentHobby[0]}</h3>
             <p className='archivo-black-regular'>{currentHobby[1]}</p>
           </div>
         </div>
       </div>
-      <div className='tex-blue'></div>
     </div>
   )
 }
