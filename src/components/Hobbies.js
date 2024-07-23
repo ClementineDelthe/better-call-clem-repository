@@ -104,6 +104,7 @@ const Hobbies = () => {
           </div>
         </div>
       </div>
+      <div className='tex-blue'></div>
     </div>
   )
 }
