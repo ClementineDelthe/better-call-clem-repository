@@ -12,7 +12,7 @@ const About = () => {
             <RotatingBanner />
           </div>
         </div>
-        <div className='p-2 text-xs md:text-base'>
+        <div className='p-2 text-[11px] md:text-base'>
           <p className='archivo-black-regular text-beige'>Hi, I'm Clémentine 🍊, a passionate web developer.</p> <br />
           <p className='archivo-black-regular text-justify text-beige'>
             After several years of experience in CRM management, with an emphasis on understanding customer needs and crafting personalised offers, I decided to shift my career trajectory towards web development. I enrolled in Le Wagon's Bootcamp, a unique experience that taught me the requested skills to embark on this new journey.

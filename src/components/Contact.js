@@ -12,8 +12,8 @@ const Contact = () => {
         <h2 className='rubik-mono-one-regular bg-pink border border-pink text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
           CONTACT
         </h2>
-        <div className='bg-green rounded-lg p-16 mt-4 md:flex md:items-center md:justify-center md:min-h-[500px] text-white'>
-          <h3 className='archivo-black-regular lg:w-1/3'>Let's grab a ☕️ or plan a meeting to discuss how I could help you bring your projects to life & have a positive impact on your users !</h3>
+        <div className='bg-green rounded-lg p-16 mt-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left md:min-h-[500px] text-white'>
+          <h3 className='archivo-black-regular text-sm md:text-base lg:w-1/3'>Let's grab a ☕️ or plan a meeting to discuss how I could help you bring your projects to life & have a positive impact on your users&nbsp;!</h3>
           <div className='flex justify-center items-center text-[8px] md:text-xs'>
             <a href="tel:+33640313037" className="flex flex-col justify-center items-center">
               <img src={phone} alt="phone" className=""/>
@@ -28,7 +28,6 @@ const Contact = () => {
               <p className="rubik-mono-one-regular text-center">LINKEDIN</p>
             </a>
           </div>
-
         </div>
       </div>
     </div>
