@@ -39,15 +39,17 @@ import sushis from '../assets/hobbies/creation/sushis.png';
 import fleurs from '../assets/hobbies/creation/fleurs.png';
 import peinture from '../assets/hobbies/creation/peinture.png';
 import tapis from '../assets/hobbies/creation/tapis.png';
+import { useTranslation } from 'react-i18next';
+
 
 const Hobbies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null);
 
   const hobbies = [
-    ['culture', 'I love reading, listening, watching, learning. I spend hours listenning to podcasts or reading books. I also have a soft spot for spanish music that I won\'t even try to fight. I am open to recomandations so don\'t hesitate to reach out if you come accross a new gem ! 💎', 'lilac', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
-    ['sport', 'I love to get that energy out and go further. I tried many sports, team or individual, and I love both. I enjoy team spirit and chearing each other up, but I also love a solo run with a good playlist. Bonus points for any outdoor sport, nothing beats nature\'s healing 🌿', 'pink', [bike, fitness, hike, pilates, run, ski, surf, volley, yoga]],
-    ['creation', 'I love trying new things and making them myself. When I spot something that I like, I think about how to make it my own way, I also love home made presents and meals, nothing says I care better than that ! I tuft beach carpet so everyone can wake up with their feet in the water 🌊', 'lilac', [boutures, angle, bougie, tarte, sables, pot, peinture, colle, plage]],
+    ['culture', 'culture description', 'lilac', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
+    ['sport', 'sport description', 'pink', [bike, fitness, hike, pilates, run, ski, surf, volley, yoga]],
+    ['creation', 'creation description', 'lilac', [boutures, angle, bougie, tarte, sables, pot, peinture, colle, plage]],
   ];
 
   useEffect(() => {
@@ -75,6 +77,8 @@ const Hobbies = () => {
 
   const currentHobby = hobbies[currentIndex];
 
+  const { t, i18n } = useTranslation();
+
   return (
     <div id="hobbies" className='bg-beige flex flex-col items-center justify-center py-16 lg:min-h-screen'>
       <div className='w-11/12 md:w-10/12'>
@@ -99,8 +103,8 @@ const Hobbies = () => {
           </div>
 
           <div className='lg:w-1/3 lg:pl-2 md:px-10'>
-            <h3 className={`rubik-mono-one-regular text-xl text-${currentHobby[2]}`}>{currentHobby[0]}</h3>
-            <p className='archivo-black-regular'>{currentHobby[1]}</p>
+            <h3 className={`rubik-mono-one-regular text-xl text-${currentHobby[2]}`}>{t(currentHobby[0])}</h3>
+            <p className='archivo-black-regular'>{t(currentHobby[1])}</p>
           </div>
         </div>
       </div>

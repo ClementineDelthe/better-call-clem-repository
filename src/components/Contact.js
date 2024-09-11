@@ -3,9 +3,11 @@ import phone from '../assets/phone_purple.png';
 import email from '../assets/email_purple.png';
 import linkedin from '../assets/linkedin_purple.png';
 import { Button } from 'react-scroll';
-
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div id="contact" className='bg-beige flex flex-col items-center justify-center lg:min-h-[95vh] py-16 lg:py-0'>
       <div className='w-11/12 md:w-10/12'>
@@ -13,11 +15,11 @@ const Contact = () => {
           CONTACT
         </h2>
         <div className='bg-green rounded-lg p-16 mt-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left md:min-h-[500px] text-white'>
-          <h3 className='archivo-black-regular text-sm md:text-base lg:w-1/3'>Let's grab a ☕️ or plan a meeting to discuss how I could help you bring your projects to life & have a positive impact on your users&nbsp;!</h3>
+          <h3 className='archivo-black-regular text-sm md:text-base lg:w-1/3'>{t('contact text')}</h3>
           <div className='flex justify-center items-center text-[8px] md:text-xs'>
             <a href="tel:+33640313037" className="flex flex-col justify-center items-center">
               <img src={phone} alt="phone" className=""/>
-              <p className="rubik-mono-one-regular text-center">CALL</p>
+              <p className="rubik-mono-one-regular text-center">{t('call')}</p>
             </a>
             <a href="mailto:clementine.delthe@gmail.com" className="flex flex-col justify-center items-center">
               <img src={email} alt="email" className=""/>

@@ -13,6 +13,7 @@ import Hobbies from './components/Hobbies';
 import SecondWave from './components/SecondWave';
 import WaveB from './components/WaveB';
 import WaveA from './components/WaveA';
+import './i18n';
 
 
 function App() {
