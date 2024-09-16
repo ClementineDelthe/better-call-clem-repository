@@ -40,7 +40,7 @@ const About = () => {
           }}
         />
         <span
-          className="w-8 h-8 bg-beige dark:bg-purple shadow-md absolute rounded-full left-1 top-1 peer-checked:bg-pink dark:peer-checked:bg-lime peer-checked:left-10 transition-all duration-500 flex items-center justify-center text-xl"
+          className="w-8 h-8 bg-beige dark:bg-blue shadow-md absolute rounded-full left-1 top-1 peer-checked:bg-pink dark:peer-checked:bg-lime peer-checked:left-10 transition-all duration-500 flex items-center justify-center text-xl"
         >
           {i18n.language === 'fr' ? '🇫🇷' : '🇬🇧'}
         </span>

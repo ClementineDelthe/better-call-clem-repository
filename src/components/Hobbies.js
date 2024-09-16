@@ -97,7 +97,7 @@ const Hobbies = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`lg:w-3 lg:h-9 w-9 h-3 rounded-full ${currentIndex === index ? 'bg-yellow dark:bg-beige' : 'bg-green dark:bg-blue'}`}
+                className={`lg:w-3 lg:h-9 w-9 h-3 rounded-full ${currentIndex === index ? 'bg-yellow dark:bg-fushia' : 'bg-green dark:bg-blue'}`}
               ></button>
             ))}
           </div>
