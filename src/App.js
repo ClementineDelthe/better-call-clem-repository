@@ -15,8 +15,8 @@ import WaveB from './components/WaveB';
 import WaveA from './components/WaveA';
 import './i18n';
 
-
 function App() {
+
   return (
     <div className="custom-cursor">
       <Header />
@@ -24,24 +24,30 @@ function App() {
       <SecondWave />
       <Skills />
       <WaveA
-        color={"#C5C3E3"}
+        lightColor={"#C5C3E3"}
+        darkColor={"#554BF8"}
       />
       <WaveB
-        color={"lilac"}
+        color={"bg-lilac dark:bg-blue"}
       />
       <Projects />
       <WaveA
-        color={"#025548"}
+        lightColor={"#025548"}
+        darkColor={"#F882FB"}
       />
       <WaveB
-        color={"green"}
+        color={"bg-green dark:bg-fushia"}
       />
       <Hobbies />
       <WaveA
-        color={"#F5B8CC"}
+        // lightColor={"#F5B8CC"}
+        // darkColor={"#333333"}
+        lightColor={"#F5B8CC"}
+        darkColor={"#BEF840"}
+
       />
       <WaveB
-        color={"pink"}
+        color={"bg-pink dark:bg-lime"}
       />
       <Contact />
       <Footer />

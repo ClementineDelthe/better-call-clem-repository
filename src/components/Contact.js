@@ -9,12 +9,12 @@ const Contact = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div id="contact" className='bg-beige flex flex-col items-center justify-center lg:min-h-[95vh] py-16 lg:py-0'>
+    <div id="contact" className='bg-beige dark:bg-black flex flex-col items-center justify-center lg:min-h-[95vh] py-16 lg:py-0'>
       <div className='w-11/12 md:w-10/12'>
-        <h2 className='rubik-mono-one-regular bg-pink border border-pink text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
+        <h2 className='rubik-mono-one-regular bg-pink dark:bg-fushia border border-pink dark:border-fushia text-beige dark:text-white px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
           CONTACT
         </h2>
-        <div className='bg-green rounded-lg p-16 mt-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left md:min-h-[500px] text-white'>
+        <div className='bg-green dark:bg-blue rounded-lg p-16 mt-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left md:min-h-[500px] text-white'>
           <h3 className='archivo-black-regular text-sm md:text-base lg:w-1/3'>{t('contact text')}</h3>
           <div className='flex justify-center items-center text-[8px] md:text-xs'>
             <a href="tel:+33640313037" className="flex flex-col justify-center items-center">

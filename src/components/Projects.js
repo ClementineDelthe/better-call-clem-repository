@@ -126,12 +126,12 @@ const Projects = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div id="projects" className='bg-beige text-white flex flex-col items-center justify-center py-16 lg:min-h-screen'>
+    <div id="projects" className='bg-beige dark:bg-black text-white flex flex-col items-center justify-center py-16 lg:min-h-screen'>
       <div className='w-11/12 md:w-10/12'>
-        <h2 className='rubik-mono-one-regular bg-lilac text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
+        <h2 className='rubik-mono-one-regular bg-lilac dark:bg-fushia text-beige dark:text-white px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
           {t('projects')}
         </h2>
-        <div className='bg-beige border-8 border-green rounded-lg md:p-16 mt-4 md:flex md:items-center md:min-h-[600px]'>
+        <div className='bg-beige dark:bg-black border-8 border-green dark:border-lime rounded-lg md:p-16 mt-4 md:flex md:items-center md:min-h-[600px]'>
           <div className='md:flex md:justify-between md:gap-2 w-full'>
             <div className='flex flex-col justify-center'>
               <div className='md:space-y-2 p-6 mx-auto flex md:flex-col'>
@@ -139,14 +139,14 @@ const Projects = () => {
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`md:w-3 md:h-9 w-9 h-3 rounded-full ${currentIndex === index ? 'bg-lilac' : 'bg-pink'}`}
+                    className={`md:w-3 md:h-9 w-9 h-3 rounded-full ${currentIndex === index ? 'bg-lilac dark:bg-lime' : 'bg-pink dark:bg-fushia'}`}
                   ></button>
                 ))}
               </div>
             </div>
             <div className='flex flex-col items-center md:w-3/4 w-full'>
-              <div className='bg-[#D0D6C3] mb-2 w-11/12 mx-auto rounded-xl p-10 border-4 border-pink md:min-h-[400px]'>
-                <h3 className='archivo-black-regular text-green'>{myProjects[currentIndex].title}</h3>
+              <div className='bg-[#D0D6C3] mb-2 w-11/12 mx-auto rounded-xl p-10 border-4 border-pink dark:border-fushia md:min-h-[400px]'>
+                <h3 className='archivo-black-regular text-green dark:text-blue'>{myProjects[currentIndex].title}</h3>
                 <p className='archivo-black-regular text-black'>{t(myProjects[currentIndex].description)}</p>
                 <div className='md:flex md:items-center md:justify-center gap-1'>
                   <img src={myProjects[currentIndex].picture1} alt='' className={`${myProjects[currentIndex].size}`} />
@@ -157,7 +157,7 @@ const Projects = () => {
                 </div>
                 <div className='lg:flex lg:items-left gap-2 justify-center pt-4'>
                   {myProjects[currentIndex].skills.map((skill) => (
-                    <button key={skill} className='archivo-black-regular text-black text-xs border border-pink rounded-full py-1 px-3'>
+                    <button key={skill} className='archivo-black-regular text-black text-xs border border-pink dark:border-fushia rounded-full py-1 px-3'>
                       {skill}
                     </button>
                   ))}

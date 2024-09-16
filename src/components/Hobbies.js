@@ -47,9 +47,9 @@ const Hobbies = () => {
   const intervalRef = useRef(null);
 
   const hobbies = [
-    ['culture', 'culture description', 'lilac', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
-    ['sport', 'sport description', 'pink', [bike, fitness, hike, pilates, run, ski, surf, volley, yoga]],
-    ['creation', 'creation description', 'lilac', [boutures, angle, bougie, tarte, sables, pot, peinture, colle, plage]],
+    ['culture', 'culture description', 'bg-lilac dark:bg-blue', 'text-lilac dark:text-blue', [alrdtalc, lfasdv, codeSource, pdljfef, cTangana, zeroPointe, jduc, friends, arcticMonkeys]],
+    ['sport', 'sport description', 'bg-pink dark:bg-fushia', 'text-pink dark:text-fushia', [bike, fitness, hike, pilates, run, ski, surf, volley, yoga]],
+    ['creation', 'creation description', 'bg-lilac dark:bg-lime', 'text-lilac dark:text-lime', [boutures, angle, bougie, tarte, sables, pot, peinture, colle, plage]],
   ];
 
   useEffect(() => {
@@ -80,14 +80,14 @@ const Hobbies = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div id="hobbies" className='bg-beige flex flex-col items-center justify-center py-16 lg:min-h-screen'>
+    <div id="hobbies" className='bg-beige dark:bg-black flex flex-col items-center justify-center py-16 lg:min-h-screen'>
       <div className='w-11/12 md:w-10/12'>
-        <h2 className='rubik-mono-one-regular bg-[#F6E140] border border-[#F6E140] text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
+        <h2 className='rubik-mono-one-regular bg-[#F6E140] dark:bg-blue border border-[#F6E140] dark:border-blue text-beige dark:text-white px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block'>
           HOBBIES
         </h2>
         <div className="mt-4 flex flex-col lg:flex-row justify-between items-center gap-2">
-          <div className={`grid grid-cols-3 gap-3 md:gap-10 rounded-3xl p-10 shadow-inner bg-${currentHobby[2]}`}>
-            {currentHobby[3].map((hob, index) => (
+          <div className={`grid grid-cols-3 gap-3 md:gap-10 rounded-3xl p-10 shadow-inner ${currentHobby[2]}`}>
+            {currentHobby[4].map((hob, index) => (
               <img key={index} src={hob} alt="" className='w-24 h-24 md:w-36 md:h-36 object-cover bg-beige rounded-3xl shadow-sm' />
             ))}
           </div>
@@ -97,14 +97,14 @@ const Hobbies = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`lg:w-3 lg:h-9 w-9 h-3 rounded-full ${currentIndex === index ? 'bg-yellow' : 'bg-green'}`}
+                className={`lg:w-3 lg:h-9 w-9 h-3 rounded-full ${currentIndex === index ? 'bg-yellow dark:bg-beige' : 'bg-green dark:bg-blue'}`}
               ></button>
             ))}
           </div>
 
           <div className='lg:w-1/3 lg:pl-2 md:px-10'>
-            <h3 className={`rubik-mono-one-regular text-xl text-${currentHobby[2]}`}>{t(currentHobby[0])}</h3>
-            <p className='archivo-black-regular'>{t(currentHobby[1])}</p>
+            <h3 className={`rubik-mono-one-regular text-xl ${currentHobby[3]}`}>{t(currentHobby[0])}</h3>
+            <p className='archivo-black-regular dark:text-white'>{t(currentHobby[1])}</p>
           </div>
         </div>
       </div>

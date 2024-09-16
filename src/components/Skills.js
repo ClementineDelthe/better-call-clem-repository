@@ -15,14 +15,14 @@ const Skills = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div id="about" className="bg-beige text-white md:pb-10 lg:pb-20 lg:min-h-[90vh] space-y-16">
+    <div id="about" className="bg-beige dark:bg-black text-white md:pb-10 lg:pb-20 lg:min-h-[90vh] space-y-16">
       <div className='w-11/12 md:w-10/12 mx-auto flex flex-col items-left justify-center md:gap-32 gap-10 p-2 md:p-0'>
         <div className=''>
-          <h2 className='rubik-mono-one-regular bg-green text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block mb-5'>{t('hard skills')}</h2>
+          <h2 className='rubik-mono-one-regular bg-green dark:bg-lime text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block mb-5'>{t('hard skills')}</h2>
           <div className=''>
             {
               hardSkills.map((skill, index) => (
-                <Button id={index} className='bg-pink border-2 border-white hover:opacity-85 text-white font-bold py-2 px-4 rounded-full m-1 archivo-black-regular'>
+                <Button id={index} className='bg-pink dark:bg-fushia border-2 border-white hover:opacity-85 text-white font-bold py-2 px-4 rounded-full m-1 archivo-black-regular'>
                   {skill}
                 </Button>
               ))
@@ -30,11 +30,11 @@ const Skills = () => {
           </div>
         </div>
         <div className=''>
-          <h2 className='rubik-mono-one-regular bg-green text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block mb-5'>{t('soft skills')}</h2>
+          <h2 className='rubik-mono-one-regular bg-green dark:bg-lime text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block mb-5'>{t('soft skills')}</h2>
           <div className=''>
             {
               softSkills.map((skill, index) => (
-                <Button id={index} className='bg-pink border-2 border-white hover:opacity-85 text-white font-bold py-2 px-4 rounded-full m-1 archivo-black-regular uppercase'>
+                <Button id={index} className='bg-pink dark:bg-fushia border-2 border-white hover:opacity-85 text-white font-bold py-2 px-4 rounded-full m-1 archivo-black-regular uppercase'>
                   {t(skill)}
                 </Button>
               ))
@@ -42,11 +42,11 @@ const Skills = () => {
           </div>
         </div>
         <div className=''>
-          <h2 className='rubik-mono-one-regular bg-green text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block mb-5'>{t('values')}</h2>
+          <h2 className='rubik-mono-one-regular bg-green dark:bg-lime text-beige px-2 py-3 rounded-tr-lg rounded-bl-lg rounded-tl-sm rounded-br-sm inline-block mb-5'>{t('values')}</h2>
           <div className=''>
             {
               values.map((skill, index) => (
-                <Button id={index} className='bg-pink border-2 border-white hover:opacity-85 text-white font-bold py-2 px-4 rounded-full m-1 archivo-black-regular uppercase'>
+                <Button id={index} className='bg-pink dark:bg-fushia border-2 border-white hover:opacity-85 text-white font-bold py-2 px-4 rounded-full m-1 archivo-black-regular uppercase'>
                   {t(skill)}
                 </Button>
               ))

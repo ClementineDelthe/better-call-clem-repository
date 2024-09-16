@@ -28,7 +28,7 @@ const Header = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div className={`header-glass archivo-black-regular border-2 border-green max-w-2xl rounded-full flex items-center justify-center w-[300px] text-[8px] md:text-sm md:w-[550px] h-12 fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50 text-green ${isVisible ? 'translate-y-0' : 'translate-y-20'}`}>
+    <div className={`header-glass archivo-black-regular border-2 border-green dark:border-lime max-w-2xl rounded-full flex items-center justify-center w-[300px] text-[8px] md:text-sm md:w-[550px] h-12 fixed bottom-2 left-1/2 transform -translate-x-1/2 z-50 text-green dark:text-fushia ${isVisible ? 'translate-y-0' : 'translate-y-20'}`}>
       <ul className='flex w-5/6 justify-between'>
         <li><Link className="cursor-pointer" to="home" smooth={true} duration={500}>{t('header about')}</Link></li>
         <li><Link className="cursor-pointer" to="about" smooth={true} duration={500}>{t('header skills')}</Link></li>

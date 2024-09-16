@@ -47,7 +47,7 @@ const RotatingBanner = () => {
     <img
       src={profilePicture}
       alt="Clémentine Delthé"
-      className="w-52 h-52 rounded-full border-8 border-lilac absolute"
+      className="w-52 h-52 rounded-full border-8 border-lilac dark:border-lime absolute"
     />
   </div>
   )
